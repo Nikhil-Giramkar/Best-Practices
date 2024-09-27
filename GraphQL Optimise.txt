@@ -1,0 +1,37 @@
+https://www.apollographql.com/docs/react/v2/performance/performance/
+
+Improve performace?
+
+1. Redirect to cached data.
+In some cases, a query requests data that already exists in the client store under a different key. 
+A very common example of this is when your UI has a list view and a detail view that both use the same data. 
+-----------------------------------
+
+2. Prefetching is one of the easiest ways to make your application's UI feel a lot faster with Apollo Client. 
+Prefetching simply means loading data into the cache before it needs to be rendered on the screen. 
+Essentially, we want to load all data required for a view as soon as we can guess that a user will navigate to it.
+-----------------------------------
+
+3. Batching involves merging multiple queries into a single request to minimize the number of network round trips required. 
+This technique is useful when retrieving related data for multiple records. 
+-----------------------------------
+
+4. Caching, on the other hand, involves storing frequently accessed data in memory to reduce the number of queries required to fetch data. 
+By caching data, subsequent requests for the same data can be served from memory, improving query times and reducing the server load.
+-----------------------------------
+
+5. Pagination
+To handle over-fetching issues, pagination and field selection can be used to only retrieve the necessary data. 
+By specifying the exact fields needed in a query, the amount of data retrieved can be reduced, improving query performance.
+-----------------------------------
+
+6. Use DataLoaders
+DataLoader is an open-source utility library used with GraphQL to implement batched data fetching and caching.
+ It is designed to load data efficiently from a database, it also helps to avoid redundant or unnecessary data fetching. 
+ By using DataLoader, it is possible to retrieve data more efficiently and reduce the number of round trips to the database, 
+Therefore improving the performance of GraphQL queries.
+-----------------------------------
+
+7. Persistent Queries
+https://www.apollographql.com/docs/apollo-server/performance/apq/
+-----------------------------------------

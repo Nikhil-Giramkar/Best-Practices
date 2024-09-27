@@ -1,0 +1,11 @@
+https://www.freecodecamp.org/news/react-performance-optimization-techniques/
+
+1. List Visualization
+2. Lazy Loading Images
+3. react.memo( )
+4. useMemo()
+5. useCallBack()
+6. Throttling
+7. Debouncing
+8. Code splitting
+9. React Fragments
